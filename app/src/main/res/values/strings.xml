@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PointoPoint</string>
+    <string name="swipe_to_send">swipe to SEND</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+    <com.example.debian.pointopoint.SwipeButton
+        android:id="@+id/swipe_btn_receive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/default_bck_ground"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_bck_ground1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:orientation="horizontal"
+        android:gravity="right"
+        app:layout_constraintBottom_toBottomOf="@+id/default_bck_ground"
+        app:layout_constraintEnd_toEndOf="@+id/default_bck_ground"
+        app:layout_constraintStart_toStartOf="@+id/default_bck_ground">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="101dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clint Anthony"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.5 GB data transferres"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corner"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="0dp"
+                android:text="share list"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="false"
+            android:src="@drawable/face"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="6dp" />
+    </LinearLayout>
+
+    <!--<com.jgabrielfreitas.core.BlurImageView-->
+        <!--android:id="@+id/imgView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/me"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:scaleType="centerCrop"/>-->
+
+    <!--<SeekBar-->
+        <!--android:id="@+id/seekBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"/>-->
+</android.support.constraint.ConstraintLayout>
